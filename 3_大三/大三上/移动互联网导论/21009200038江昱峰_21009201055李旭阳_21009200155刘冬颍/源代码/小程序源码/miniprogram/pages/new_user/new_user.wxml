@@ -1,0 +1,67 @@
+<!--miniprogram/pages/newuser_edit_info/new_user.wxml-->
+<view wx:if="{{fakeCode == 2}}" class="userInfo">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}" mode="widthFix"></image>
+  </button>
+  <!-- <input type="nickname" class="weui-input" placeholder="请输入昵称"/> -->
+  <view class="tip">（点击上方获取头像）</view>
+  <view class="nickname">
+    <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+  </view>
+</view>
+
+<view wx:if="{{fakeCode == 1}}" class="userInfo">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"></image>
+  </button>
+  <view class="tip">（点击上方获取头像）</view>
+</view>
+
+<image src="../../images/bg.jpg" mode="aspectFill" class="background"></image>
+
+<view wx:if="{{fakeCode == 1}}" class="text">
+  <form class="text" bindsubmit="bindFormSubmit">
+  <view class="input_line">
+    <text class="term">姓名:</text>
+    <input class="input" type="text" name="name" placeholder="*" 	confirm-type="next"></input>
+  </view>
+  <view class="input_line">
+    <text class="term">性别:</text>
+    <radio-group name="gender" style="margin-right: 30rpx; width:60%; display:flex; flex-direction:column ">
+      <label><radio style="margin-right:20rpx" value="0"/>男生</label>
+      <label><radio style="margin-right:20rpx" value="1"/>女生</label>
+    </radio-group>
+  </view>
+
+  <view class="input_line">
+    <text class="term">年级:</text>
+    <input class="input" type="text" name="grade" confirm-type="next" placeholder="例：2023级"></input>
+  </view>
+  <view class="input_line">
+    <text class="term">专业/大类:</text>
+    <input class="input" type="text" name="professional" confirm-type="next" placeholder="例：计算机类"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">联系方式:</text>
+    <input class="input" type="text" name="phone" confirm-type="next" placeholder="填手机号码哦..."></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">邮箱:</text>
+    <input class="input" type="text" name="email" confirm-type="next" placeholder="一定要填对哦！"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">自我介绍：</text>
+    <textarea class="input" placeholder="兴趣爱好、理想目标以及交友宣言什么的都可以哦~畅所欲言呀..." type="text"
+              name="introduction" cols="30" rows="10" maxlength="-1"></textarea>
+  </view>
+  <!--性别，年级，生辰，专业/大类，学号，手机号，个人介绍-->
+  <button form-type="submit">保存</button>
+</form>
+</view>
+<button wx:if="{{fakeCode == 2}}" bindtap="submitFake" class="submitFake">保存</button>
+
+
+

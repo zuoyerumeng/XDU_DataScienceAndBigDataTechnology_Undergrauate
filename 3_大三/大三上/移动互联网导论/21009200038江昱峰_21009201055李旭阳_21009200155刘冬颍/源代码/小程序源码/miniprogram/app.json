@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/welcome/index",
+    "pages/user/user",
+    "pages/edit_userinfo/edit_userinfo",
+    "pages/introduce_index/introduce_index",
+    "pages/Shopping_Cart/Shopping_Cart",
+    "pages/general_introduction/general_introduction",
+    "pages/detail_introduction/detail_introduction",
+    "pages/interview/interview",
+    "pages/searchresult/searchresult",
+    "pages/userinfo/userinfo",
+    "pages/new_user/new_user",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "华为创新俱乐部",
+    "navigationBarTextStyle": "black",
+    "custom": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,28 @@
+<!--页面根标签-->
+<view class="content">
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='background' src="../../images/cover.jpg" mode="aspectFill"></image>
+  
+<!--页面其它部分   -->
+</view>
+
+<!-- <image class="head-img" src="../../images/hic-head.jpg" mode="aspectFill"></image> -->
+
+<!-- <text class="w_t1">华创</text>
+<text class="w_t2" decode="{{true}}">HUAWEI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INNOVATION&nbsp;&nbsp;&nbsp;&nbsp;CLUB</text>
+<text class="w_t3">西电华为创新俱乐部</text> -->
+<view class="logoContainer">
+  <image class="logo" mode="heightFix" src="../../images/HIC.png"></image>
+  <view class="textEnterContainer">
+    <text class="textEnter">上滑以进入</text>
+  </view>
+</view>
+
+<cover-image class="up-img" bindtap="login" src="../../images/up.png" animation="{{animation}}"/>
+
+
+<view class="duration-touch-view"
+      bindtouchstart="touchStart"
+      bindtouchmove="touchMove"
+      bindtouchend="touchEnd">
+</view>

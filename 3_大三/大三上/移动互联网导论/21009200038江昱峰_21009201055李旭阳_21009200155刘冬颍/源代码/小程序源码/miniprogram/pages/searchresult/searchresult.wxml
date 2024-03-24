@@ -1,0 +1,38 @@
+<!--pages/searchresult/searchresult.wxml-->
+<!-- <view class="search">
+  <input 	bindconfirm="search" type="text" confirm-type="search" class="searchInput" placeholder="搜索"/>
+  <image class="searchIcon" src="../../images/search3.png" mode="widthFix" bindtap="search"></image>
+</view> -->
+
+<view class="user" wx:for="{{stuinfo}}" wx:key="key" hidden="{{is_hidden[index]!=1}}">
+  <view class="userinfo" data-id="{{index}}" bindtap="goToUserInfo">
+    <view class="userinfo-head">
+      <image src="{{item.avatarUrl}}" class="userinfo-headImg" data-id="{{index}}" mode="aspectFill"></image>
+    </view>
+    <view class="userinfo-name" data-id="{{index}}">{{item.name}}</view>
+  </view>
+
+  <view class="button">
+    <button class="agree"
+      style="width: 110rpx; height: 50rpx; margin-right: 10rpx; padding: 0rpx;font-size: 25rpx; border-radius: 60rpx;"
+      data-id="{{index}}" bindtap="Agree">同意</button>
+    <button class="disagree"
+      style="width: 110rpx; height: 50rpx; margin-left: 10rpx;margin-right: 20rpx; padding: 0rpx;font-size: 25rpx; border-radius: 60rpx;"
+      data-id="{{index}}" bindtap="disAgree">拒绝</button>
+  </view>
+</view>
+
+<view class="user" wx:for="{{stuinfo}}" wx:key="key" hidden="{{is_hidden[index]==1}}">
+  <view class="userinfo" data-id="{{index}}" bindtap="goToUserInfo">
+    <image src="{{item.avatarUrl}}" class="userinfo-head" data-id="{{index}}" mode="aspectFill"></image>
+    <view class="userinfo-name" data-id="{{index}}">{{item.name}}</view>
+  </view>
+
+  <view class="ispassed-info">
+    <view class="passed-info" hidden="{{is_hidden[index] != 0}}" style="color: #48e462;">已通过</view>
+    <view class="unpassed-info" hidden="{{is_hidden[index] != 2}}" style="color: red;">未通过</view>
+  </view>
+</view>
+
+<!-- 代替margin-bottom -->
+<view style="opacity:0;width:0;height:0;">-</view>

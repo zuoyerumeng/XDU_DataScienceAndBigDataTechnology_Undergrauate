@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Project - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\30465\AppData\Local\Temp\RSP4820.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Project.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp"
+]
+Creating command line "cl.exe @C:\Users\30465\AppData\Local\Temp\RSP4820.tmp" 
+<h3>Output Window</h3>
+Compiling...
+Message_mechanism.cpp
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2653: 'CProcess_ChildDlg' : is not a class or namespace name
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2270: 'GetMessageMap' : modifiers not allowed on nonmember functions
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2601: 'GetMessageMap' : local function definitions are illegal
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2653: 'CProcess_ChildDlg' : is not a class or namespace name
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2248: 'messageMap' : cannot access protected member declared in class 'CDialog'
+        e:\my\ganhuo\0 general in the whole life\program\0other languages\c&c++\vc++6.0\vc98\mfc\include\afxwin.h(2667) : see declaration of 'messageMap'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2653: 'CProcess_ChildDlg' : is not a class or namespace name
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2065: '_messageEntries' : undeclared identifier
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2109: subscript requires array or pointer type
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2102: '&' requires l-value
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(23) : error C2653: 'CProcess_ChildDlg' : is not a class or namespace name
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(26) : error C2078: too many initializers
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(26) : error C2065: 'OnPaint' : undeclared identifier
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(26) : error C2440: 'type cast' : cannot convert from 'int *' to 'void (__thiscall CWnd::*)(void)'
+        There is no context in which this conversion is possible
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(26) : error C2059: syntax error : ';'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(27) : error C2065: 'OnQueryDragIcon' : undeclared identifier
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(27) : error C2440: 'type cast' : cannot convert from 'int *' to 'struct HICON__ *(__thiscall CWnd::*)(void)'
+        There is no context in which this conversion is possible
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(27) : error C2143: syntax error : missing ';' before '}'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(27) : error C2143: syntax error : missing ';' before ','
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(28) : error C2065: 'IDC_BUTTON_Send' : undeclared identifier
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(28) : error C2440: 'type cast' : cannot convert from 'void (__cdecl *)(void)' to 'void (__thiscall CCmdTarget::*)(void)'
+        There is no context in which this conversion is possible
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(28) : error C2143: syntax error : missing ';' before '}'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(28) : error C2143: syntax error : missing ';' before ','
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(30) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(31) : error C2447: missing function header (old-style formal list?)
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(31) : error C2143: syntax error : missing ';' before ','
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(33) : error C2143: syntax error : missing ';' before '{'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(33) : error C2447: missing function header (old-style formal list?)
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(33) : error C2143: syntax error : missing ';' before '}'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(36) : error C2653: 'CProcess_ChildDlg' : is not a class or namespace name
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(50) : error C2065: 'm_LISTBOX_Record' : undeclared identifier
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(50) : error C2228: left of '.InsertString' must have class/struct/union type
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(52) : error C2143: syntax error : missing ';' before 'return'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(53) : error C2143: syntax error : missing ';' before '}'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(53) : error C2143: syntax error : missing ';' before '}'
+E:\MY\Ganhuo\4-Undergraduate\大学四年\2大二\大二下\操作系统（OS）\实验\我的实验\实验1：进程通信\Project\Message_mechanism.cpp(53) : error C2143: syntax error : missing ';' before '}'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+Message_mechanism.obj - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

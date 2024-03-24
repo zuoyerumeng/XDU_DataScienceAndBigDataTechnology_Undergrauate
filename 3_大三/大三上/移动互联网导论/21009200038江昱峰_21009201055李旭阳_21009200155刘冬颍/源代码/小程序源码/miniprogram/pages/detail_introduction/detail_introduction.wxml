@@ -1,0 +1,12 @@
+<!--miniprogram/pages/detail_introduction/detail_introduction.wxml-->
+<image src="{{introImg}}"  mode="widthFix" class="d_img"></image>
+
+<view class="shopping_cart">
+  <view class="red_point" style='background-color:{{red_point_color}}' ></view>
+  <image wx:if="{{fakeCode == 1}}" src="{{order_src}}" class="cart" bindtap="open_shopping_cart"></image>
+</view>
+
+<view class="bottom_button">
+  <image class="back" bindtap="back" src="../../images/back_1.png" ></image>
+  <image wx:if="{{fakeCode == 1}}" class="add" bindtap="add" src="../../images/add.png"></image>
+</view>

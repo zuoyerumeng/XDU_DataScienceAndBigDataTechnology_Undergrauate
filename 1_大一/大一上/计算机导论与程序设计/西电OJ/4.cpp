@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<string.h>
+ int main()
+ {
+  int i,j,k,sum=0,b=0,len,c[87];
+  char str[256],a[87][256],s,t,temp;
+  gets(str);
+  len=strlen(str);
+  for(i=0;i<len;i++)
+  {
+  	  if(str[i]=='-')
+  	{
+  		sum++;
+  		a[sum][1]='-';
+  		t=2;
+  		for(j=i+1;j<len;j++)
+  		{
+  			a[sum][t]=str[j];
+  			t++;
+  			if(str[j]==' ')
+  			{
+  				c[sum]=t-1;
+				break;
+			  }
+		  }
+		for(j=1;j<sum;j++)
+		{
+			for(k=1;k<=255;k++)
+			{
+				b=0;
+				if(a[sum][k]!=a[j][k])
+				{
+					b=1;
+					break;
+				}
+			}
+			if(b==0)
+		  {
+			for(j=1;j<=87;j++)
+		       a[sum][j]=='\0';
+		    sum--;   
+			break; 
+	      }
+		}      
+	  }
+   }
+   if(sum==0)
+      printf("no");
+  else
+  {
+   for(i=0;i<len;i++)
+   {
+   	for(j=1;j<sum;j++)
+   	{
+   		for(k=2;k<=255;k++)
+   		{
+   			if(a[j][k]<a[j+1][k])
+   			    break;
+   			else if(a[j][k]>a[j+1][k])
+   			{
+   				for(int n=2;n<=255;n++)
+   				{
+   					t=a[j+1][n];
+   					a[j+1][n]=a[j][n];
+   					a[j][n]=t;
+				   }
+				break;
+			   }
+		   }
+	   }
+   }
+  	for(i=1;i<=sum;i++)
+  	{
+  		for(j=1;j<=c[i];j++)
+  		    printf("%c",a[i][j]);
+	  }
+  }
+return 0;
+}

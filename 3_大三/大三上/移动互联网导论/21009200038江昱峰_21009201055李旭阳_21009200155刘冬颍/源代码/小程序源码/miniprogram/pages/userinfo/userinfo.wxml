@@ -1,0 +1,31 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="userinfo">
+<view class="userinfo-head">
+  <image src="{{info.avatarUrl}}" mode="aspectFill"></image>
+</view>
+<view wx:if="{{fakeCode == 2}}">
+  <view class="userinfo-head">
+  <image src="https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0" mode="aspectFill"></image>
+</view>
+</view>
+  <view class="text" wx:if='{{fakeCode == 1}}'>
+    <text class="name">姓名：{{info.name}}</text>
+    <text class="sex">性别：{{genderStr}}</text>
+    <text class="name">年级：{{info.grade}}</text>
+    <text class="major">专业/大类：{{info.professional}}</text>
+    <text class="phone_number">手机号：{{info.phone}}</text>
+    <text class="email">邮箱：{{info.email}}</text>
+    <text class="hobby">个人介绍：{{info.introduction}}</text>
+  </view>
+</view>
+
+<view class="feedback" wx:if='{{fakeCode == 1}}'>
+  <!-- <view class="feedback-title" style="font-size: 45rpx;">面试结果反馈</view> -->
+  <form bindsubmit="bindFormSubmit">
+  <textarea class="feedback-text" placeholder="点击填写面试意见..." name="textarea" id="" cols="30" rows="10" maxlength="-1" value="{{comment}}" ></textarea>
+  <button class="submit" form-type="submit"> 保存 </button>
+</form>
+</view>
+
+
+<!--image class="check-img" src="/images/hook.png" bindtap="checkClick"></image-->

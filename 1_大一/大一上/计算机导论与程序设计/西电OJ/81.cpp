@@ -1,0 +1,76 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+ int main()
+ {
+  char ch[100],str[50][100],c[50][100];
+  int f,n,l,i,j,k,flag;
+  scanf("%s%d%d",&ch,&f,&n);
+  for(i=1;i<=n;i++)
+  {
+  	scanf("%s",&str[i]);
+  	strcpy(c[i],str[i]);
+  }
+  	  
+ l=strlen(ch);
+ if(f==1)
+ {
+ 	for(i=1;i<=n;i++)
+ 	{
+ 		for(j=0;j<=strlen(str[i])-l;j++)
+ 		{
+ 			if(ch[0]==str[i][j])
+ 			{
+ 				flag=1;
+				 for(k=j+1;k<j+l;k++)
+ 				{
+ 					if(ch[k-j]!=str[i][k])
+ 					{
+ 						flag=0;
+ 						break;
+					 }
+				 }
+				if(flag==1)
+				{
+					printf("%s\n",str[i]);
+					break;
+				}  
+			 }
+		 }
+	 }
+ }
+ else
+ {
+ 	for(i=0;i<l;i++)
+ 	    ch[i]=toupper(ch[i]);
+ 	for(i=1;i<=n;i++)
+ 	{
+ 		for(j=0;j<strlen(str[i]);j++)
+ 		   str[i][j]=toupper(str[i][j]);
+	 }
+  for(i=1;i<=n;i++)
+ 	{
+ 		for(j=0;j<=strlen(str[i])-l;j++)
+ 		{
+ 			if(ch[0]==str[i][j])
+ 			{
+ 				flag=1;
+				 for(k=j+1;k<j+l;k++)
+ 				{
+ 					if(ch[k-j]!=str[i][k])
+ 					{
+ 						flag=0;
+ 						break;
+					 }
+				 }
+				if(flag==1)
+ 		            {
+ 		            	printf("%s\n",c[i]);
+ 		            	break;
+					 }
+			 }
+		 }
+	 }
+ }
+return 0;
+}

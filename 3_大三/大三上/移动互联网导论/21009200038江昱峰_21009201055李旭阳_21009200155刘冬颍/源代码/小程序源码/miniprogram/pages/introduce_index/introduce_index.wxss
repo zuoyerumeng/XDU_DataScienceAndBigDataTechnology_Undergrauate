@@ -1,0 +1,242 @@
+/* miniprogram/pages/introduce_index/introduce_index.wxss */
+page{
+  background-color: #EDEDED;
+}
+.general_introduction{
+  width: 90%;
+  height: 292px;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+.general_introduction_img {
+  width: 100%;
+  height: 100%;
+}
+.logos {
+  width: 90%;
+  height: 200rpx;
+  margin: 5%;
+  margin-bottom: 0;
+  display: flex;
+  background-color: #ffffff;
+  /*border: 4rpx solid #ffffff;*/
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32rpx;
+}
+.logo_img{
+  width:88rpx ;
+  height: 88rpx;
+  scale: 1.6;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+.logo_text{
+  font-size: 20 rpx;
+  color:black;
+  font-weight: bold;
+}
+.Recommendations_Bar{
+  display: flex;
+  font-size: 40rpx;
+  color: black;
+  background-color:rgb(255, 255, 255);
+  width: 90%;
+  /* margin: 5%; */
+  margin: 0 auto;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 25rpx;
+  justify-items: center;
+  align-items: center;
+  overflow-y: scroll;
+  white-space: nowrap; 
+}
+.Recommendation{
+  height: 90%;
+  width: 100rpx;
+  padding:25rpx;
+  text-align:center;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  
+}
+
+.department_display{
+  column-count: 2; 
+  column-gap: 30rpx; 
+  width: 90%;
+  align-self: center;
+  overflow: hidden;
+}
+.departments{
+  width: 320rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-column-break-inside: avoid; /*避免元素被分割*/
+  margin-bottom: 30rpx;
+  background-color:white;
+  border-radius: 25rpx;
+  /*height: 100%;
+  overflow: auto;*/
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+
+  /* 下面两行代码十分重要！！勿动！！！ */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* 兼容ios且修复显示的部分bug */
+}
+.department_img{
+  width: 100%;
+  transform: scale(1.05);
+  /* border-radius: 25rpx 0; */
+}
+.tiltle_and_like{
+  width: 94%;
+  padding: 5rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22rpx;
+}
+.department_title{
+  font-size: 30rpx;
+  padding: 0 20rpx;
+
+}
+.like{
+  height: 36rpx;
+  width: 36rpx;
+  padding-left: 20rpx;
+}
+.department_text{
+  width: 80%;
+  font-size: 22rpx;
+  padding: 20rpx;
+  padding-top: 14rpx;
+  margin: 0 auto;
+  /* margin-left: 10rpx; */
+}
+.bottom_blank{
+  width: 100%;
+  height: 100px;
+}
+.bottom_tabbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96rpx;
+  background: white;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-bar-border {
+  background-color: rgba(0, 0, 0, 0.33);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2rpx;
+  transform: scaleY(0.5);
+}
+.bottom_tabbar_view {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom_tabbar_img{
+  width: 54rpx;
+  height: 54rpx;
+}
+.red_point{
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  position: relative;
+  bottom: 55rpx;
+  left: 30rpx;
+ 
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  z-index: top;
+}
+.message_block{
+  padding-top: 20rpx;
+  background-color: white;
+  border-radius: 22rpx;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50rpx rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 158rpx;
+  /* z-index: auto; */
+}
+.message{
+  /* align-self: center; */
+  width: 80%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  /* margin-bottom: 20rpx; */
+}
+
+.message_img{
+  width: 140rpx;
+  height: 112rpx;
+  border-radius: 22rpx;
+  margin: 22rpx 0;
+}
+.group_name{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.result{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.line{
+  margin: 0 auto;
+  width: 85%;
+  height: 1rpx;
+  background-color: #e9e7e7;
+  border-radius: 2rpx;
+}

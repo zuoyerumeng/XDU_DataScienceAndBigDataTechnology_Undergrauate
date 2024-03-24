@@ -1,0 +1,46 @@
+#include<stdio.h>
+ int main()
+ {
+  int n,m,i,j,k,x1[11][2],y1[11],x2[11],y2[11],x[51],y[51],f,t1,t2,t3,t4,t5;
+  scanf("%d%d",&n,&m);
+  for(i=1;i<=n;i++)
+  {
+  	scanf("%d%d%d%d",&x1[i][1],&y1[i],&x2[i],&y2[i]);
+  	x1[i][0]=i;
+  }
+  for(i=1;i<=m;i++)scanf("%d%d",&x[i],&y[i]);
+  for(i=1;i<=m;i++)
+  {
+  	f=0;
+	  for(j=n;j>0;j--)
+  	{
+  		if(x[i]>=x1[j][1]&&x[i]<=x2[j]&&y[i]>=y1[j]&&y[i]<=y2[j])
+  		{
+  			f=1;
+			printf("%d\n",x1[j][0]);
+			t1=x1[j][0];
+			t2=x1[j][1];
+		    t3=y1[j];
+		    t4=x2[j];
+		    t5=y2[j];
+			for(k=j;k<n;k++)
+			{
+				x1[k][0]=x1[k+1][0];
+			    x1[k][1]=x1[k+1][1];
+			    y1[k]=y1[k+1];
+			    x2[k]=x2[k+1];
+			    y2[k]=y2[k+1];
+			}
+			x1[n][0]=t1;
+		    x1[n][1]=t2;
+		    y1[n]=t3;
+		    x2[n]=t4;
+		    y2[n]=t5;
+			break; 
+		  }
+	  }
+	if(f==0)
+	  printf("IGNORED\n");
+  }
+return 0;
+}

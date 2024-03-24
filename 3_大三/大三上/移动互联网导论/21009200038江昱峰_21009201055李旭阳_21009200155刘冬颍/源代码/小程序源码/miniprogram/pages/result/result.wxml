@@ -1,0 +1,48 @@
+<scroll-view scroll-y='true'>
+<view class="container1">
+  <image mode="widthFix" class="img1" src="../../images/result.png"></image>
+  <text class="text_inform">通知</text>
+  <image mode="widthFix" class="logo" src="../../images/HIC.png"></image>
+</view>
+
+<view class="container2">
+  <view class="group1">
+    <image mode="widthFix" class="admit" src="../../images/admit.svg" style="position: relative; left: 34rpx; top: 3rpx"></image>
+    <view class="text1">
+      <view class="text1_01"  style="position: relative; left: 34rpx; top: 0rpx">
+      恭喜你已经顺利通过了华为创新俱乐部<text class="text1_02">{{groupName}}</text>的考核！
+      </view>
+    </view>
+  </view>
+  <view class="text2">
+    欢迎加入华创大家庭！
+  </view>
+  <view class="text3">
+    <text user-select="true" data-text="{{clubQQ}}" bindtap="copyText">HIC QQ群号：{{clubQQ}}</text>
+  </view>
+  <view class="text3_plus">
+    （点击即可复制群号）
+  </view>
+
+  <view class="text5" wx:if="{{groupName != '数模组'}}">
+    <text user-select="true" data-text="{{groupQQ}}" bindtap="copyText">{{groupName}}QQ群号：{{groupQQ}}</text>
+  </view>
+  <view class="text3_plus" wx:if="{{groupName != '数模组'}}">
+    （点击即可复制群号）
+  </view>
+  <view class='line'></view>
+  <view class="text4"> 
+    <view>
+      在平时，我们会主办各种各样的活动，可以参加我们的技术讲座，与优秀的学长学姐探讨问题，一起学习，共同进步。
+    </view>
+    <view>
+      加油吖！期待你在这里有所收获~~
+    </view>
+  </view>
+</view>
+<view class="author">
+  <text class="au_01">By </text>
+  <text class="au_02">西电华为创新俱乐部-开发组</text>
+</view>
+</scroll-view>
+

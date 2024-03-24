@@ -1,0 +1,39 @@
+#include<stdio.h>
+ int main()
+ {
+  int i=1,j,sum=0,p,a,s[150],S=0; 
+  scanf("%d",&p);
+  while(sum<p)
+  {
+  	a=0;
+  	for(j=2;j<i;j++)
+  	{
+  		if(i%j==0)
+  		  a++;
+	  }
+	if(a==0)
+	{
+		sum++;
+		s[sum]=i;
+	}
+	i++;
+  }
+  while(sum>=p&&sum<=p+10)
+  {
+  	a=0;
+  	for(j=2;j<i;j++)
+  	{
+  		if(i%j==0)
+  		  a++;
+	  }
+	if(a==0)
+	{
+		sum++;
+		s[sum]=i;
+		S+=s[sum];
+	}
+	i++;
+  }
+  printf("%d",S);
+return 0;
+}

@@ -1,0 +1,30 @@
+/* miniprogram/pages/general_introduction/general_introduction.wxss */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+page{
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.g_img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  animation:fadeIn 2s;
+}
+.g_back{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  right: 0;
+  backdrop-filter: blur(10px);
+}

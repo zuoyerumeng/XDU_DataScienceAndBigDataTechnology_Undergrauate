@@ -1,0 +1,61 @@
+<!--miniprogram/pages/user/user.wxml-->
+<image class='background' src="../../images/bg.jpg" mode="aspectFill"></image>
+
+<view wx:if="{{fakeCode == 2}}" class="userinfo">
+  <view class="head-img">
+    <image class="avatar" src="{{fakeInfo.fakeAvatarUrl}}" mode="widthFix"></image>
+  </view>
+  <view class="info_right">
+    
+    <view class="title_line">
+      <image class='lev' src="../../images/lev.svg"></image>
+      <view class='intro' bindtap="editTitle">{{userInfo.title}}</view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view wx:if="{{fakeCode == 1}}" class="userinfo">
+  <view class="head-img">
+    <image class="avatar" src="{{avatarUrl}}" mode="aspectFill"></image>
+  </view>
+  <view class="info_right">
+    <view class="name_line">
+      <text class='name'>{{userInfo.name}}</text>
+      <image src="../../images/edit.png" class="edit_userinfo" bindtap="editUserinfo"></image>
+    </view>
+    <view class="title_line">
+      <image class='lev' src="../../images/lev.svg"></image>
+      <view class='intro' bindtap="editTitle">{{userInfo.title}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='square' wx:if="{{isAdmin}}" wx:key="key" style="top: 400rpx;">
+  <view class="square_top">
+    <text class='text-top'>面试</text>
+    <view class="buttons">
+      <text class="buttons-text" bindtap="interview">审一审</text>
+    </view>
+  </view>
+  <text class='text-intro'>老东西，速速来面试！</text>
+
+</view>
+
+<view class='square' style="top: 1240rpx;">
+  <view class="square_top">
+    <text class='text-top'>我们</text>
+    <view class="buttons">
+      <text class="buttons-text" bindtap="look">看一看</text>
+    </view>
+  </view>
+  <text class='text-intro' style="top: 120rpx;">欢迎加入我们，期待与你相遇~</text>
+  <!-- <text class='text-intro' style="top: 160rpx;">期待与你相遇</text> -->
+
+</view>
+<view wx:if="{{fakeCode == 1}}" class="message" bindtap="showMessage">
+  <image src="/images/index_message.png" class="message_icon"></image>
+  <text class="message_text">面试通知</text>
+</view>
+
+
+

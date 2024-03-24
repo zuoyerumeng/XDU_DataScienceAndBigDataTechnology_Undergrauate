@@ -1,0 +1,157 @@
+/* pages/searchresult/searchresult.wxss */
+page {
+  background-color: #EDEDED;
+}
+.search {
+  height: 50rpx;
+  width: 90%;
+  pad: 3rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 3rpx #2c2c2c;
+  border-radius: 50rpx;
+}
+.searchIcon {
+  width: 45rpx;
+  margin-right: 20rpx;
+}
+.searchInput {
+  height: 100%;
+  flex: 1;
+  margin-left: 25rpx;
+}
+.user{
+  height: 130rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  /* border: solid 5rpx #00000033; */
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 22rpx;
+  /* 下面这四句我也不知道什么意思，总之实现了把那两个按钮搞到右边的操作！ */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user:last-child {
+  margin-bottom: 100rpx;
+}
+.userinfo {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: centers;
+  text-align: center;
+  align-items: center;
+}
+
+.userinfo-head{
+  height: 100rpx;
+  width: 100rpx;
+  overflow: hidden;
+  margin-left: 25rpx;
+  border-radius: 19rpx;
+  border: solid 1rpx rgba(0, 0, 0, 0.3);
+  /* padding: 1rpx; */
+  background-color: white;
+}
+
+.userinfo-headImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 18rpx;
+}
+
+.userinfo-name{
+  height: 50rpx;
+  /* width: 100rpx; */
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  /* float:left ; */
+}
+.userinfo-number{
+  height: 50rpx;
+  width: 150rpx;
+  margin-top: 55rpx;
+}
+
+/* 下面是通过后的显示样式 */
+.passed-user{
+  height: 120rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50rpx;
+  border: solid 5rpx #00000033;
+  border-radius: 20rpx;
+  /* 下面这四句我也不知道什么意思，总之实现了把那两个按钮搞到右边的操作！ */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.passed-userinfo{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  /* text-align: center; */
+}
+.passed-userinfo-head{
+  height: 100rpx;
+  width: 100rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+}
+.passed-userinfo-name{
+  height: 50rpx;
+  /* width: 100rpx; */
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  /* float:left ; */
+}
+
+.ispassed-info {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-align: right;
+  font-size: 40rpx;
+}
+
+.button{
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.agree{
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  /* border: 5rpx #000000 solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.disagree{
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  /* border: 5rpx #000000 solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

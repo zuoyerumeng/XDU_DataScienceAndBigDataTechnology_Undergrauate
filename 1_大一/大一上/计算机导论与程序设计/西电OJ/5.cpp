@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<math.h>
+ int main()
+ {
+  int n,m,a[31][31],b[31][31],c[31][31],i,j,k,sum;
+  scanf("%d%d",&n,&m);
+  for(i=1;i<=n;i++)
+  {
+  	for(j=1;j<=m;j++)
+  	{
+  		scanf("%d",&c[i][j]); 
+  	    a[i][j]=c[i][j];
+  	    b[i][j]=c[i][j];
+	  }
+  }
+  for(i=1;i<=n;i++)
+  {
+     for(j=1;j<=m-2;j++)
+     {
+     	if(a[i][j]==a[i][j+1]&&a[i][j]==a[i][j+2])
+     	{
+     		k=j+2;
+     		sum=3;
+     		while(a[i][k]==a[i][k+1])
+     		{
+     			k++;
+     			sum++;
+			 }
+			for(k=j;k<=j+sum-1;k++)
+			a[i][k]=0;
+		 }
+	 }
+  }
+  for(j=1;j<=m;j++)
+  {
+     for(i=1;i<=n-2;i++)
+     {
+     	if(b[i][j]==b[i+1][j]&&b[i][j]==b[i+2][j])
+     	{
+     		k=i+2;
+			sum=3;
+     		while(b[k][j]==b[k+1][j])
+     		{
+     			sum++;
+     			k++;
+			 }
+			for(k=i;k<=i+sum-1;k++)
+			b[k][j]=0;
+		 }
+	 }
+  }
+  for(i=1;i<=n;i++)
+  {
+  	for(j=1;j<=m;j++)
+  	  printf("%d ",int((double)sqrt((double)a[i][j]*(double)b[i][j])));
+    printf("\n");
+  }
+return 0;
+}

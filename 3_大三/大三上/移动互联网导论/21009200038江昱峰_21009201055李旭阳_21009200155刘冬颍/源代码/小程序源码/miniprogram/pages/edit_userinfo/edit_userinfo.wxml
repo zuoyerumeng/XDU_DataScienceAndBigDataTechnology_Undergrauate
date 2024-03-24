@@ -1,0 +1,60 @@
+<!--miniprogram/pages/edit_userinfo/edit_userinfo.wxml-->
+<image src="../../images/bg.jpg" mode="aspectFill" class="background"></image>
+
+<view class="userinfo" wx:if="{{fakeCode == 1}}">
+  <view class="userinfo-img">
+    <image src="{{userInfo.avatarUrl}}" mode="widthFix" class="avatar"></image>
+    <!-- 此处需要更新 -->
+  </view>
+</view>
+<view wx:if="{{fakeCode == 2}}">
+  <view class="userinfo-img">
+  <image src="https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0" mode="aspectFill"></image>
+</view>
+</view>
+<form class="text" bindsubmit="bindFormSubmit" wx:if="{{fakeCode == 1}}">
+  <view class="input_line">
+    <text class="term">姓名：</text>
+    <input class="input" type="text" name="name" value="{{userInfo.name}}"></input>
+  </view>
+  <view class="input_line">
+    <text class="term">性别：</text>
+    <radio-group name="gender" style="margin-right: 40rpx; width:50%; display:flex; justify-content:space-around">
+      <label><radio wx:if="{{userInfo.gender == 0}}" checked=" " style="margin-right:20rpx" value="0"/>
+      <radio wx:else="{{userInfo.gender == 0}}" checked="" style="margin-right:20rpx" value="0"/>男</label>
+      <label><radio wx:if="{{userInfo.gender == 1}}" checked=" " style="margin-left:20rpx" value="1"/>
+      <radio wx:else="{{userInfo.gender == 0}}" checked="" style="margin-left:20rpx" value="1"/>女</label>
+    </radio-group>
+  </view>
+
+  <view class="input_line">
+    <text class="term">年级:</text>
+    <input class="input" type="text" name="grade" value="{{userInfo.grade}}"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">专业/大类:</text>
+    <input class="input" type="text" name="professional" value="{{userInfo.professional}}"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">联系方式:</text>
+    <input class="input" type="text" name="phone" value="{{userInfo.phone}}"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">邮箱:</text>
+    <input class="input" type="text" name="phone" value="{{userInfo.email}}"></input>
+  </view>
+
+  <view class="input_line">
+    <text class="term">自我介绍:</text>
+    <textarea class="input" type="text" name="introduction" cols="30" rows="10" maxlength="-1"
+              value="{{userInfo.introduction}}"></textarea>
+  </view>
+  <!--性别，年级，生辰，专业/大类，学号，手机号，个人介绍-->
+  <button form-type="submit">保存</button>
+</form>
+
+
+

@@ -1,0 +1,10 @@
+database try
+1
+datatable user
+5
+id name math cs english 
+3 3 2 2 2 
+3
+¡¯210001¡¯ ¡¯liming¡¯ 90 92.5 87 
+¡¯210001¡¯ ¡¯liming¡¯ 92.5 90 91 
+¡¯210002¡¯ ¡¯liyang¡¯ 91 92.5 87 

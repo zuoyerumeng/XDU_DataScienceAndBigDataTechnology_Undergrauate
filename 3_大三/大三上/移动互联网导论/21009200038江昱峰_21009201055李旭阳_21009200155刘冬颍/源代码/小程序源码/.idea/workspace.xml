@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57438c79-4c67-47f4-8675-7e3af8134df4" name="变更" comment="优化">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Shopping_Cart/Shopping_Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Shopping_Cart/Shopping_Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/edit_userinfo/edit_userinfo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/edit_userinfo/edit_userinfo.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/new_user/new_user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/new_user/new_user.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/userinfo/userinfo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/userinfo/userinfo.wxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/cloudfunctions/createUser/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2DgxkvFir34HYTsIhgmyu0V82A9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/微信开发者工具/HIC-miniprogram",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="57438c79-4c67-47f4-8675-7e3af8134df4" name="变更" comment="" />
+      <created>1661134674764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661134674764</updated>
+      <workItem from="1661134675969" duration="2676000" />
+      <workItem from="1661209821286" duration="528000" />
+      <workItem from="1661210362855" duration="101000" />
+      <workItem from="1661251919845" duration="7610000" />
+      <workItem from="1661350934662" duration="1837000" />
+      <workItem from="1661485125515" duration="4123000" />
+      <workItem from="1661565325762" duration="194000" />
+      <workItem from="1661565531519" duration="2916000" />
+      <workItem from="1661737182628" duration="630000" />
+      <workItem from="1661769834605" duration="2352000" />
+      <workItem from="1661819795855" duration="767000" />
+      <workItem from="1661834029831" duration="1884000" />
+      <workItem from="1661849718714" duration="1199000" />
+      <workItem from="1661863878427" duration="772000" />
+      <workItem from="1661931131590" duration="872000" />
+      <workItem from="1663589264204" duration="26000" />
+      <workItem from="1666574601501" duration="123000" />
+      <workItem from="1670384209483" duration="451000" />
+      <workItem from="1693915006060" duration="3211000" />
+      <workItem from="1693921785095" duration="1447000" />
+      <workItem from="1693923921047" duration="3532000" />
+      <workItem from="1693988552516" duration="1296000" />
+      <workItem from="1693999600529" duration="8969000" />
+      <workItem from="1694013813022" duration="21421000" />
+      <workItem from="1694098738031" duration="1853000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加录取结果通知页面，对其他页面进行了一些优化。">
+      <created>1661134779339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661134779339</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加了一些图片。">
+      <created>1661135455657</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661135455657</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改了一些图片，优化了封面渲染速度。">
+      <created>1661209882144</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661209882144</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改了一些icon以及做了一些优化。">
+      <created>1661311493395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661311493396</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改了一些icon以及做了一些优化。">
+      <created>1661312642042</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661312642042</updated>
+    </task>
+    <task id="LOCAL-00006" summary="对创建用户的页面进行了一些优化和调整。">
+      <created>1661326194706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661326194706</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复了一些bug，调整了部分页面布局，优化体验。">
+      <created>1661347549292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661347549292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修复若干bug，优化体验。">
+      <created>1661435997600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661435997600</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修复审批页面的部分bug，优化体验。">
+      <created>1661594435631</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661594435631</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修复若干bug，优化用户体验。">
+      <created>1661686717793</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661686717793</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修复若干bug，优化用户体验。">
+      <created>1661702114893</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661702114893</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修复志愿页面的一些bug，优化用户体验。">
+      <created>1661737214364</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661737214364</updated>
+    </task>
+    <task id="LOCAL-00013" summary="对志愿页面样式及布局进行了调整，优化用户体验。">
+      <created>1661779357904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661779357904</updated>
+    </task>
+    <task id="LOCAL-00014" summary="增加了页面锁，优化体验。">
+      <created>1661819884264</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661819884264</updated>
+    </task>
+    <task id="LOCAL-00015" summary="增加了页面锁，修复了一些bug，优化体验。">
+      <created>1661841468141</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661841468141</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修复了一些bug，对页面布局进行了一些调整，优化用户体验。">
+      <created>1661848606063</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661848606063</updated>
+    </task>
+    <task id="LOCAL-00017" summary="对页面布局进行了一些调整，优化用户体验。">
+      <created>1661850702410</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850702410</updated>
+    </task>
+    <task id="LOCAL-00018" summary="对用户头像进行了调整，优化用户体验。">
+      <created>1661864029773</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1661864029773</updated>
+    </task>
+    <task id="LOCAL-00019" summary="加强页面锁">
+      <created>1661931172166</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1661931172166</updated>
+    </task>
+    <task id="LOCAL-00020" summary="一些优化">
+      <created>1666574678458</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666574678458</updated>
+    </task>
+    <task id="LOCAL-00021" summary="一些优化">
+      <created>1670384259406</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670384259406</updated>
+    </task>
+    <task id="LOCAL-00022" summary="test">
+      <option name="closed" value="true" />
+      <created>1693915022488</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1693915022488</updated>
+    </task>
+    <task id="LOCAL-00023" summary="处理了由于微信API改变所造成的bug">
+      <option name="closed" value="true" />
+      <created>1693916843964</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1693916843964</updated>
+    </task>
+    <task id="LOCAL-00024" summary="处理了由于微信API改变所造成的bug">
+      <option name="closed" value="true" />
+      <created>1693916851365</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693916851365</updated>
+    </task>
+    <task id="LOCAL-00025" summary="修改了封面">
+      <option name="closed" value="true" />
+      <created>1693920758892</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1693920758892</updated>
+    </task>
+    <task id="LOCAL-00026" summary="一些优化">
+      <option name="closed" value="true" />
+      <created>1693922759360</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693922759360</updated>
+    </task>
+    <task id="LOCAL-00027" summary="修复了一些bug">
+      <option name="closed" value="true" />
+      <created>1693928490565</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693928490565</updated>
+    </task>
+    <task id="LOCAL-00028" summary="增加了部分图片，限制了用户意向选择数最大为2">
+      <option name="closed" value="true" />
+      <created>1694007309485</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1694007309485</updated>
+    </task>
+    <task id="LOCAL-00029" summary="h_logo">
+      <option name="closed" value="true" />
+      <created>1694008140788</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1694008140788</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修复bug等">
+      <option name="closed" value="true" />
+      <created>1694083305413</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1694083305413</updated>
+    </task>
+    <task id="LOCAL-00031" summary="一些优化">
+      <option name="closed" value="true" />
+      <created>1694087572353</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1694087572353</updated>
+    </task>
+    <task id="LOCAL-00032" summary="优化模糊搜索提示等">
+      <option name="closed" value="true" />
+      <created>1694092529036</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1694092529036</updated>
+    </task>
+    <task id="LOCAL-00033" summary="优化">
+      <option name="closed" value="true" />
+      <created>1694092800941</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1694092800941</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="修改了一些图片，优化了封面渲染速度。" />
+    <MESSAGE value="修改了一些icon以及做了一些优化。" />
+    <MESSAGE value="对创建用户的页面进行了一些优化和调整。" />
+    <MESSAGE value="修复了一些bug，调整了部分页面布局，优化体验。" />
+    <MESSAGE value="修复若干bug，优化体验。" />
+    <MESSAGE value="修复审批页面的部分bug，优化体验。" />
+    <MESSAGE value="修复若干bug，优化用户体验。" />
+    <MESSAGE value="修复志愿页面的一些bug，优化用户体验。" />
+    <MESSAGE value="对志愿页面样式及布局进行了调整，优化用户体验。" />
+    <MESSAGE value="增加了页面锁，优化体验。" />
+    <MESSAGE value="增加了页面锁，修复了一些bug，优化体验。" />
+    <MESSAGE value="修复了一些bug，对页面布局进行了一些调整，优化用户体验。" />
+    <MESSAGE value="对页面布局进行了一些调整，优化用户体验。" />
+    <MESSAGE value="对用户头像进行了调整，优化用户体验。" />
+    <MESSAGE value="加强页面锁" />
+    <MESSAGE value="test" />
+    <MESSAGE value="处理了由于微信API改变所造成的bug" />
+    <MESSAGE value="修改了封面" />
+    <MESSAGE value="修复了一些bug" />
+    <MESSAGE value="增加了部分图片，限制了用户意向选择数最大为2" />
+    <MESSAGE value="h_logo" />
+    <MESSAGE value="修复bug等" />
+    <MESSAGE value="一些优化" />
+    <MESSAGE value="优化模糊搜索提示等" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
+  </component>
+</project>

@@ -1,0 +1,49 @@
+<!--miniprogram/pages/introduce_index/introduce_index.wxml-->
+<view class="general_introduction">
+  <image src="https://i.loli.net/2021/08/24/HP9vhQYq4DCKI6S.png" data-id="0" mode="widthFix" class="general_introduction_img" bindtap="general_introduce"></image>
+</view>
+<view class="logos"> 
+<view class="logo"  >
+  <image src="../../images/h_logo.png" data-id="1"  mode="aspectFit" class="logo_img" bindtap="general_introduce"></image>
+  <view class="logo_text">花粉部</view>
+</view>
+<view class="logo">
+  <image src="../../images/t_logo.png" data-id="2" mode="aspectFit" class="logo_img" bindtap="general_introduce"></image>
+  <view class="logo_text">技术部 </view>
+</view>
+</view>
+<view class="Recommendations_Bar">
+  <view wx:for="{{groupTypes}}" wx:key="id" data-id="{{index}}" class="Recommendation" bindtap="tap_group" style="{{index == group_touch_id? 'background-color: rgba(4, 4, 4, 100); border-radius: 30rpx; color:white;' : ' '}}" > {{item.name}}</view>
+</view>
+<view class="department_display">
+  <view wx:for="{{groupTypes[group_touch_id].groupId}}" wx:key="key" class="departments" >
+    <image src="{{groups[item].coverImg}}" mode="widthFix" class="department_img" data-id="{{index}}" bindtap="detail_introduction"></image>
+    <view class="tiltle_and_like">
+    <view class="department_title" data-id="{{index}}" bindtap="detail_introduction">{{groups[item].name}}</view>
+    <image wx:if="{{fakeCode == 1}}" class="like" data-id="{{index}}" src='{{groups[item].isclick==true ?"../../images/add_1.png":"../../images/add_0.png"}}' bindtap="like"> </image>
+  </view>
+    <view class="department_text" data-id="{{index}}" bindtap="detail_introduction">{{groups[item].intro}}</view>
+  </view>
+</view>
+<view class="mask" bindtap="hideModal" wx:if="{{show_message}}"></view>
+<scroll-view scroll-y="true" class="message_block" wx:if="{{show_message}}" animation="{{animationData}}" enable-flex="true" catchtouchmove="true">  
+    <view class="messageNone" wx:for="{{application_result}}" wx:key="key">
+      <view class="message">
+        <image class="message_img" src="{{item.img}}" mode="aspectFill"></image>
+        <text class="group_name">{{item.name}}</text>
+        <text class="result">{{item.result}}</text>
+      </view>
+      <view class="line"></view>
+    </view>
+</scroll-view>
+<view class="bottom_blank"></view>
+<cover-view wx:if="{{fakeCode == 1}}" class="bottom_tabbar">
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view class="bottom_tabbar_view">
+  <cover-image src="{{order_src}}" class="bottom_tabbar_img" bindtap="open_shopping_cart"></cover-image>
+  </cover-view>
+  <cover-view class="bottom_tabbar_view">
+    <cover-image src="{{message_src}}" class="bottom_tabbar_img" bindtap='message'></cover-image>
+  </cover-view>
+</cover-view>
+
